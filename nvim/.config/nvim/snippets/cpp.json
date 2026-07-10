@@ -1,0 +1,101 @@
+{
+  "Competitive Programming": {
+    "prefix": "cp",
+    "body": [
+     "#include \"bits/stdc++.h\"",
+      "",
+      "using namespace std;",
+      "",
+      "#define int long long",
+      "",
+      "signed main() {",
+      "\tios::sync_with_stdio(false);",
+      "\tcin.tie(nullptr);",
+      "",
+      "\t$0",
+      "}"
+    ],
+    "description": "Competitive programming template"
+  },
+
+  "Test Cases": {
+    "prefix": "tc",
+    "body": [
+      "int t;",
+      "cin >> t;",
+      "while (t--) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Read and iterate over test cases"
+  },
+
+  "Vector Input": {
+    "prefix": "vin",
+    "body": [
+      "vector<int> ${1:a}(${2:n});",
+      "for (auto &x : ${1:a}) cin >> x;"
+    ],
+    "description": "Read a vector"
+  },
+
+  "Vector Output": {
+    "prefix": "vout",
+    "body": [
+      "for (const auto &x : ${1:a}) cout << x << ' ';",
+      "cout << '\\n';"
+    ],
+    "description": "Print a vector"
+  },
+
+  "For Loop": {
+    "prefix": "for",
+    "body": [
+      "for (int ${1:i} = ${2:0}; ${1:i} < ${3:n}; ${1:i}++) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Standard for loop"
+  },
+
+    "All Iterators": {
+    "prefix": "all",
+    "body": [
+      "${1:a}.begin(), ${1:a}.end()"
+    ],
+    "description": "Container begin/end iterators"
+  },
+
+  "Reverse All Iterators": {
+    "prefix": "rall",
+    "body": [
+      "${1:a}.rbegin(), ${1:a}.rend()"
+    ],
+    "description": "Container reverse iterators"
+  },
+
+  "YES": {
+    "prefix": "yes",
+    "body": [
+      "cout << \"YES\\n\";"
+    ],
+    "description": "Print YES"
+  },
+
+  "NO": {
+    "prefix": "no",
+    "body": [
+      "cout << \"NO\\n\";"
+    ],
+    "description": "Print NO"
+  },
+
+  "Debug": {
+    "prefix": "dbg",
+    "body": [
+      "cerr << \"${1:var} = \" << ${1:var} << '\\n';"
+    ],
+    "description": "Print variable to stderr"
+  }
+
+}
