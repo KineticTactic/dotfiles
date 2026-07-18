@@ -1,5 +1,7 @@
 # Dotfiles
 
+![screenshot](assets/ss.png)
+
 ## Requirements
 
 * Git
