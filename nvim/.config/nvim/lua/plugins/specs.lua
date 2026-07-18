@@ -6,6 +6,7 @@ vim.pack.add {
   gh 'folke/which-key.nvim',
   gh 'ellisonleao/gruvbox.nvim',
   gh 'neanias/everforest-nvim',
+  gh 'rose-pine/neovim',
   gh 'Everblush/nvim',
   gh 'folke/todo-comments.nvim',
   gh 'nvim-mini/mini.nvim',

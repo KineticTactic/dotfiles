@@ -335,7 +335,7 @@ font_size 12.0
 #: Stop blinking cursor after the specified number of seconds of
 #: keyboard inactivity. Set to zero to never stop blinking.
 
-# cursor_trail 0
+cursor_trail 1
 
 #: Set this to a value larger than zero to enable a "cursor trail"
 #: animation. This is an animation that shows a "trail" following the
@@ -1002,7 +1002,7 @@ single_window_margin_width 0
 #: set the vertical and horizontal sides. Three values set top,
 #: horizontal and bottom. Four values set top, right, bottom and left.
 
-# window_padding_width 0
+#window_padding_width 0
 
 #: The window padding (in pts) (blank area between the text and the
 #: window border). A single value sets all four sides. Two values set
@@ -1027,13 +1027,12 @@ single_window_margin_width 0
 #: only at the bottom and right edges. The value can be one of: top-
 #: left, top, top-right, left, center, right, bottom-left, bottom,
 #: bottom-right.
-
-active_border_color #a057ba
+active_border_color #683510
 
 #: The color for the border of the active window. Set this to none to
 #: not draw borders around the active window.
 
-# inactive_border_color #cccccc
+inactive_border_color #666666
 
 #: The color for the border of inactive windows.
 
@@ -1047,7 +1046,7 @@ active_border_color #a057ba
 #: Fade the text in inactive windows by the specified amount (a number
 #: between zero and one, with zero being fully faded).
 
-# hide_window_decorations no
+hide_window_decorations titlebar-only
 
 #: Hide the window decorations (title-bar and window borders) with
 #: yes. On macOS, titlebar-only and titlebar-and-corners can be used
@@ -2795,3 +2794,9 @@ bold_font        auto
 italic_font      auto
 bold_italic_font auto
 # END_KITTY_FONTS
+
+
+# BEGIN_KITTY_THEME
+# Gruvbox Dark Hard
+include gruvbox.conf
+# END_KITTY_THEME
