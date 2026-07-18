@@ -5,6 +5,8 @@ vim.pack.add {
   gh 'lewis6991/gitsigns.nvim',
   gh 'folke/which-key.nvim',
   gh 'ellisonleao/gruvbox.nvim',
+  gh 'neanias/everforest-nvim',
+  gh 'Everblush/nvim',
   gh 'folke/todo-comments.nvim',
   gh 'nvim-mini/mini.nvim',
   gh 'karb94/neoscroll.nvim',

@@ -9,6 +9,8 @@ vim.o.mouse = 'a'
 vim.o.showmode = false
 vim.o.breakindent = true
 vim.o.undofile = true
+vim.o.winborder = 'rounded'
+vim.opt.cmdheight = 0
 
 vim.opt.expandtab = true
 vim.opt.tabstop = 4
