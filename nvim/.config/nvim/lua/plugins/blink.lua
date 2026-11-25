@@ -44,6 +44,9 @@ require('blink.cmp').setup {
 
   sources = {
     default = { 'lsp', 'path', 'snippets', 'buffer' },
+    per_filetype = {
+      markdown = { 'lsp', 'path', 'snippets' },
+    },
   },
 
   snippets = { preset = 'mini_snippets' },

@@ -1,5 +1,19 @@
-require('nvim-treesitter.configs').setup {
-  ensure_installed = {
+require('nvim-treesitter').setup()
+
+require('nvim-treesitter').install {
+  'c',
+  'cpp',
+  'lua',
+  'vim',
+  'vimdoc',
+  'query',
+  'python',
+  'rust',
+  'svelte',
+}
+
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = {
     'c',
     'cpp',
     'lua',
@@ -8,18 +22,7 @@ require('nvim-treesitter.configs').setup {
     'query',
     'python',
     'rust',
+    'svelte',
   },
-
-  highlight = {
-    enable = true,
-  },
-  incremental_selection = {
-    enable = true,
-
-    keymaps = {
-      init_selection = '<CR>',
-      node_incremental = '<CR>',
-      node_decremental = '<BS>',
-    },
-  },
-}
+  callback = function() vim.treesitter.start() end,
+})

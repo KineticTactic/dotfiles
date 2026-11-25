@@ -17,4 +17,6 @@ vim.pack.add {
   gh 'saghen/blink.cmp',
   gh 'vyfor/cord.nvim',
   gh 'folke/flash.nvim',
+  gh 'delphinus/md-render.nvim',
+  gh 'nvim-treesitter/nvim-treesitter',
 }

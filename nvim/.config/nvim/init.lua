@@ -52,10 +52,11 @@ require 'plugins.todo-comments'
 require 'plugins.mini'
 require 'plugins.conform'
 require 'plugins.blink'
--- require 'plugins.treesitter'
+require 'plugins.treesitter'
 require 'plugins.neoscroll'
 require 'plugins.flash'
 require 'plugins.cord'
+require 'plugins.md-render'
 
 require('config.keymaps').setup()
 require 'config.lsp'

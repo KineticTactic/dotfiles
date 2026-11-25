@@ -131,4 +131,25 @@ function M.lsp(event)
   -- end, { desc = "Treesitter Search" })
 end
 
+-- markdown
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = 'markdown',
+  callback = function()
+    vim.keymap.set('v', '<C-b>', 'c**<C-r>"**<Esc>', {
+      buffer = true,
+      desc = 'Bold selection',
+    })
+
+    vim.keymap.set('v', '<C-i>', 'c*<C-r>"*<Esc>', {
+      buffer = true,
+      desc = 'Italicize selection',
+    })
+  end,
+})
+
+-- markdown preview
+vim.keymap.set("n", "<leader>md", "<cmd>MdRender toggle<CR>", {
+    desc = "Toggle Markdown rendering",
+})
+
 return M

@@ -4,9 +4,7 @@ local function in_cp_project()
   local file = vim.api.nvim_buf_get_name(0)
 
   for dir in vim.fs.parents(file) do
-    if vim.fs.basename(dir) == "cp" then
-      return true
-    end
+    if vim.fs.basename(dir) == 'cp' then return true end
   end
 
   return false
@@ -18,7 +16,7 @@ local function run_cp()
   vim.cmd 'botright split'
   vim.cmd 'resize 12'
 
-  vim.cmd 'terminal g++-15 -std=c++17 -O2 % -o %< && ./%<'
+  vim.cmd 'terminal g++ -std=c++17 -O2 % -o %< && ./%<'
 
   vim.cmd.startinsert()
 end

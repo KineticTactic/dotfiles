@@ -1,0 +1,178 @@
+{
+  "cpp": {
+    "prefix": "cpp",
+    "body": [
+      "```cpp",
+      "$0",
+      "```"
+    ],
+    "description": "C++ code block"
+  },
+
+  "code": {
+    "prefix": "code",
+    "body": [
+      "```$1",
+      "$0",
+      "```"
+    ],
+    "description": "Generic code block"
+  },
+
+  "h1": {
+    "prefix": "h1",
+    "body": [
+      "# $0"
+    ],
+    "description": "Heading 1"
+  },
+
+  "h2": {
+    "prefix": "h2",
+    "body": [
+      "## $0"
+    ],
+    "description": "Heading 2"
+  },
+
+  "h3": {
+    "prefix": "h3",
+    "body": [
+      "### $0"
+    ],
+    "description": "Heading 3"
+  },
+
+  "note": {
+    "prefix": "note",
+    "body": [
+      "> [!NOTE]",
+      "> $0"
+    ],
+    "description": "Note callout"
+  },
+
+  "important": {
+    "prefix": "imp",
+    "body": [
+      "> [!IMPORTANT]",
+      "> $0"
+    ],
+    "description": "Important callout"
+  },
+
+  "warning": {
+    "prefix": "warn",
+    "body": [
+      "> [!WARNING]",
+      "> $0"
+    ],
+    "description": "Warning callout"
+  },
+
+  "keypoint": {
+    "prefix": "kp",
+    "body": [
+      "> 💡 **Key point:** $0"
+    ],
+    "description": "Key point"
+  },
+
+  "definition": {
+    "prefix": "def",
+    "body": [
+      "**$1:** $0"
+    ],
+    "description": "Definition"
+  },
+
+  "inline": {
+    "prefix": "ic",
+    "body": [
+      "`$0`"
+    ],
+    "description": "Inline code"
+  },
+
+  "bold": {
+    "prefix": "bb",
+    "body": [
+      "**$0**"
+    ],
+    "description": "Bold text"
+  },
+
+  "italic": {
+    "prefix": "ii",
+    "body": [
+      "*$0*"
+    ],
+    "description": "Italic text"
+  },
+
+  "output": {
+    "prefix": "out",
+    "body": [
+      "```text",
+      "$0",
+      "```"
+    ],
+    "description": "Program output"
+  },
+
+  "terminal": {
+    "prefix": "term",
+    "body": [
+      "```bash",
+      "$0",
+      "```"
+    ],
+    "description": "Terminal command"
+  },
+
+  "example": {
+    "prefix": "ex",
+    "body": [
+      "### Example",
+      "",
+      "```cpp",
+      "$1",
+      "```",
+      "",
+      "**Output:**",
+      "",
+      "```text",
+      "$0",
+      "```"
+    ],
+    "description": "C++ example with output"
+  },
+
+  "todo": {
+    "prefix": "todo",
+    "body": [
+      "- [ ] $0"
+    ],
+    "description": "TODO item"
+  },
+
+  "done": {
+    "prefix": "done",
+    "body": [
+      "- [x] $0"
+    ],
+    "description": "Completed item"
+  },
+
+  "table": {
+    "prefix": "table",
+    "body": [
+      "| $1 | $2 |",
+      "| --- | --- |",
+      "| $3 | $4 |",
+      "| $5 | $6 |",
+      "| $0 | $0 |"
+    ],
+    "description": "Markdown table"
+  }
+}

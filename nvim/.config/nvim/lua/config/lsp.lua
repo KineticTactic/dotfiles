@@ -28,8 +28,37 @@ vim.lsp.config('lua_ls', {
   },
 })
 
+vim.lsp.config('ts_ls', {
+  cmd = { 'typescript-language-server', '--stdio' },
+  filetypes = {
+    'javascript',
+    'javascriptreact',
+    'typescript',
+    'typescriptreact',
+  },
+  root_markers = {
+    'tsconfig.json',
+    'jsconfig.json',
+    'package.json',
+    '.git',
+  },
+})
+
+vim.lsp.config('svelte', {
+  cmd = { 'svelteserver', '--stdio' },
+  filetypes = { 'svelte' },
+  root_markers = {
+    'svelte.config.js',
+    'svelte.config.ts',
+    'package.json',
+    '.git',
+  },
+})
+
+vim.lsp.enable 'svelte'
 vim.lsp.enable 'clangd'
 vim.lsp.enable 'lua_ls'
+vim.lsp.enable 'ts_ls'
 
 local attach_group = vim.api.nvim_create_augroup('lsp-attach', { clear = true })
 local highlight_group = vim.api.nvim_create_augroup('lsp-highlight', { clear = false })
